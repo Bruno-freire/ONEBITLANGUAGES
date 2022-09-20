@@ -1,0 +1,231 @@
+.html-login * {
+  margin: 0;
+  padding: 0;
+}
+.log-rock-login {
+  width: 40px;
+  height: auto;
+}
+.log-obc-login {
+  width: 200px;
+}
+.cabeca {
+  background-color: black;
+  display: flex;
+  height: 10vh;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 20px;
+}
+.buttom-login {
+  display: flex;
+  gap: 10px;
+}
+.buttom-header-login {
+  font-size: 15px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  background-color: transparent;
+  color: white;
+  border-color: white;
+  border-radius: 10px;
+  padding: 5px 10px;
+  cursor: pointer;
+  transition: 0.3s;
+  &:hover {
+    border-color: red;
+  }
+}
+
+.container-login {
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(220, 56, 47);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.content-login {
+  width: 60%;
+  height: 60%;
+  background-color: rgb(0, 0, 0);
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  box-shadow: 10px 10px 30px;
+  padding: 25px;
+}
+.left-card-login {
+  padding: 15px 25px;
+  width: 60vw;
+  height: 40vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.left-card-login > h1 {
+  color: red;
+}
+.right-card-login {
+  padding: 15px 25px;
+  width: 60vw;
+  height: 40vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.login-card-login > h1 {
+  color: white;
+  margin: 0;
+}
+.login-card-login {
+  background-color: rgb(47, 2, 2);
+  width: 60%;
+  display: flex;
+  border: 2px solid;
+  border-radius: 20px;
+  box-shadow: 0px 5px 25px -12px red;
+  padding: 30px 50px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.text-field-login {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  margin: 10px 0px;
+}
+
+.text-field-login > input {
+  width: 100%;
+  border: none;
+  border-radius: 10px;
+  padding: 15px;
+  background-color: darkgray;
+  color: rgb(0, 0, 0);
+  font-size: 12pt;
+  box-sizing: border-box;
+  outline: none;
+}
+.text-field-login > label {
+  color: red;
+  margin-bottom: 10px;
+}
+.box-login {
+  width: 100%;
+  height: 25px;
+  color: red;
+}
+
+.btn-login {
+  width: 100%;
+  padding: 16px 0;
+  background-color: rgb(171, 19, 19);
+  border-style: solid;
+  border-radius: 8px;
+  border-color: black;
+  transition: 0.5s;
+  text-transform: uppercase;
+  font-weight: 800;
+  initial-letter: 3px;
+  cursor: pointer;
+  box-shadow: 0px 10px 40px -12px rgb(255, 0, 0);
+  &:hover {
+    background-color: rgb(255, 0, 0);
+  }
+}
+.footer-login {
+  background-color: rgb(69, 67, 67);
+  display: flex;
+  justify-content: center;
+}
+@media (max-width: 1023px) {
+  .login-card-login {
+    width: 150px;
+  }
+}
+@media (max-width: 426px) {
+  .content-login {
+    width: 350px;
+    height: 480px;
+    flex-direction: column;
+  }
+  .left-card-login {
+    justify-content: flex-start;
+    align-items: center;
+    height: 100px;
+  }
+  .cabeca {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    height: auto;
+  }
+  .login-card-login {
+    width: 320px;
+  }
+  .right-card-login {
+    width: 300px;
+  }
+  .buttom-login {
+    align-self: center;
+    flex-direction: row;
+    padding: 10px;
+  }
+}
+@media (max-width: 376px) {
+  .content-login {
+    width: 300px;
+  }
+  .login-card-login {
+    padding: 15px;
+    width: 250px;
+  }
+  .right-card-login {
+    width: 250px;
+    padding: 20px 0px;
+  }
+}
+@media (max-width: 321px) {
+  .content-login {
+    width: 250px;
+  }
+}
+@media (min-width: 2559px) {
+  * {
+    font-size: 25px;
+  }
+  .cabeca {
+    height: 7vh;
+  }
+  .log-obc-login {
+    width: 400px;
+  }
+  .log-rock-login {
+    width: 50px;
+  }
+  .buttom-header-login {
+    font-size: 35px;
+  }
+  .right-card-login {
+    width: 100vw;
+  }
+  .login-card-login {
+    height: 100%;
+  }
+  .text-field-login {
+    width: 60%;
+  }
+  .btn-login {
+    font-size: 18px;
+    width: 65%;
+    height: 50px;
+  }
+  .box-login {
+    margin-left: 190px;
+  }
+}
